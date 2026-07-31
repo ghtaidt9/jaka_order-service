@@ -1,9 +1,3 @@
--- Create order_db
-CREATE DATABASE order_db ENCODING UTF8;
-
--- Switch to order_db and create tables
-\c order_db;
-
 CREATE TABLE IF NOT EXISTS orders (
     id SERIAL PRIMARY KEY,
     customer_id VARCHAR(255) NOT NULL,
